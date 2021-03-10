@@ -1,0 +1,32 @@
+body{
+  // background-image: image_url('haruao.jpg');
+  background-image: image_url('park1.jpg');
+  // background-image: image_url('sora1.jpg');
+  background-size: cover;
+}
+.header{
+  width:  100%;
+  height: 200px;
+  // background-color: yellowgreen;
+}
+.container{
+  width: 100%;
+  display: flex;
+  height: 1200px;
+  // background-color: lemonchiffon;
+  .aside{
+    width:300px;
+    // background-color: lightblue;
+  }
+  .main{
+    width: calc(100% - 300px);
+    // background-color: pink;   
+  }
+}
+
+.footer{
+  width: 100%;
+  height: 200px;
+  // background-color: lawngreen;
+  bottom: 0;
+}
