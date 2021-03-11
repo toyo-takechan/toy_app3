@@ -7,26 +7,49 @@ body{
 .header{
   width:  100%;
   height: 200px;
-  // background-color: yellowgreen;
+  background-color: yellowgreen;
 }
 .container{
   width: 100%;
   display: flex;
   height: 1200px;
-  // background-color: lemonchiffon;
+  background-color: lemonchiffon;
   .aside{
     width:300px;
-    // background-color: lightblue;
+    background-color: lightblue;
   }
   .main{
     width: calc(100% - 300px);
-    // background-color: pink;   
+    background-color: pink; 
+    text-align: center;  
+    padding-top: 30px;
+    // position: relative;
+    &-name a{
+      text-decoration: none;
+    }
+    &-post{
+      width: 700px;
+      height:400px;
+      text-align: center; 
+      margin: auto;
+      padding-top: 10px;
+      &-content{
+        border: solid 5px ;
+        height:400px;
+        padding-top: 10px;
+      }
+      &-image{
+        border: solid 5px ;
+        height:400px;
+        padding-top: 10px;
+      }
+    }
   }
 }
 
 .footer{
   width: 100%;
   height: 200px;
-  // background-color: lawngreen;
+  background-color: lawngreen;
   bottom: 0;
 }
