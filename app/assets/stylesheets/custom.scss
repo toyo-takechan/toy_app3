@@ -33,6 +33,11 @@ body{
       text-align: center; 
       margin: auto;
       padding-top: 10px;
+      &-title{
+        border: solid 5px;
+        height: 70px;
+        padding-top: 10px;
+      }
       &-content{
         border: solid 5px ;
         height:400px;
