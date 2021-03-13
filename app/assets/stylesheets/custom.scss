@@ -52,6 +52,40 @@ body{
   }
 }
 
+.form{
+  width:700px;
+  margin: 0 auto;
+  &-h1 a{
+    text-decoration: none;
+  }
+  &_label{
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    margin-top: 30px;
+    padding-bottom: 0;
+  }
+  &_title{
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    margin: 0px;
+  }
+  &_content{
+    display: block;
+    width: 100%;
+    height: 350px;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  &_btn{
+    display: block;
+    width: 200px;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}
+
 .footer{
   width: 100%;
   height: 200px;

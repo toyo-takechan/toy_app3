@@ -1,5 +1,16 @@
 <div class="aside">
   
 </div>
-  <h1 class="main-name"><%=link_to "TOY  APPへようこそ", "#" %></h1>
+<div class="form">
+  <h1 class="form-h1"><%=link_to "TOY  APPへようこそ", new_post_path %></h1>
+  <%= form_with(model: @post, local: true) do |f|%>
+  <%= f.label :タイトル, class:"form_label"%> 
+  <%= f.text_field :title, class:"form_title" %>
+  <%= f.label :内容, class:"form_label" %>
+  <%= f.text_area :content, placeholder: "文章を投稿してください。", class:"form_content" %>
+  <%= f.label :画像, class:"form_label" %>
+  <%= f.text_area :content, placeholder: "画像を投稿してください。", class:"form_content" %>
+  <%= f.submit "投稿する", class:"form_btn" %>
+  <% end %>
+</div>
   
