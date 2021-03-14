@@ -3,92 +3,105 @@ body{
   background-image: image_url('park1.jpg');
   // background-image: image_url('sora1.jpg');
   background-size: cover;
-}
-.header{
-  width:  100%;
-  height: 200px;
-  background-color: yellowgreen;
-}
-.container{
-  width: 100%;
-  display: flex;
-  height: 1200px;
-  background-color: lemonchiffon;
-  .aside{
-    width:300px;
-    background-color: lightblue;
+  // display: flex;
+  // flex-flow: column;
+  // min-height: 100vh;
+  // box-sizing: border-box;
+  // position: relative;
+  .header{
+    width:  100%;
+    height: 200px;
+    background-color: yellowgreen;
   }
-  .main{
-    width: calc(100% - 300px);
-    background-color: pink; 
-    text-align: center;  
-    padding-top: 30px;
+  .container{
+    // flex: 1;
+    width: 100%;
+    display: flex;
+    // height: 1200px;
+    // min-height: 100vh;
+    // padding-bottom: 200px;
+    
     // position: relative;
-    &-name a{
+    background-color: lemonchiffon;
+    .aside{
+      width:300px;
+      background-color: lightblue;
+    }
+    .main{
+      width: calc(100% - 300px);
+      background-color: pink; 
+      text-align: center;  
+      padding-top: 30px;
+      // position: relative;
+      &-name a{
+        text-decoration: none;
+      }
+      &-post{
+        width: 700px;
+        height:400px;
+        text-align: center; 
+        margin: auto;
+        padding-top: 10px;
+        &-title{
+          border: solid 5px;
+          height: 70px;
+          padding-top: 10px;
+        }
+        &-content{
+          border: solid 5px ;
+          height:400px;
+          padding-top: 10px;
+        }
+        &-image{
+          border: solid 5px ;
+          height:400px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .footer{
+    width: 100%;
+    height: 50px;
+    background-color: lawngreen;
+    // position: absolute;
+    // margin-bottom: 0;
+    // bottom: 0;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .form{
+    width:700px;
+    margin: 0 auto;
+    &-h1 a{
       text-decoration: none;
     }
-    &-post{
-      width: 700px;
-      height:400px;
-      text-align: center; 
-      margin: auto;
-      padding-top: 10px;
-      &-title{
-        border: solid 5px;
-        height: 70px;
-        padding-top: 10px;
-      }
-      &-content{
-        border: solid 5px ;
-        height:400px;
-        padding-top: 10px;
-      }
-      &-image{
-        border: solid 5px ;
-        height:400px;
-        padding-top: 10px;
-      }
+    &_label{
+      display: block;
+      width: 100%;
+      font-size: 24px;
+      margin-top: 30px;
+      padding-bottom: 0;
     }
-  }
-}
-
-.form{
-  width:700px;
-  margin: 0 auto;
-  &-h1 a{
-    text-decoration: none;
-  }
-  &_label{
-    display: block;
-    width: 100%;
-    font-size: 24px;
-    margin-top: 30px;
-    padding-bottom: 0;
-  }
-  &_title{
-    display: block;
-    width: 100%;
-    font-size: 24px;
-    margin: 0px;
-  }
-  &_content{
-    display: block;
-    width: 100%;
-    height: 350px;
-    font-size: 24px;
-    margin-top: 10px;
-  }
-  &_btn{
-    display: block;
-    width: 200px;
-    font-size: 24px;
-    margin-top: 30px;
-  }
-}
-
-.footer{
-  width: 100%;
-  height: 200px;
-  background-color: lawngreen;
-  bottom: 0;
+    &_title{
+      display: block;
+      width: 100%;
+      font-size: 24px;
+      margin: 0px;
+    }
+    &_content{
+      display: block;
+      width: 100%;
+      height: 350px;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+    &_btn{
+      display: block;
+      width: 200px;
+      font-size: 24px;
+      margin-top: 30px;
+    }
+  } 
 }
