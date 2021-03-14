@@ -1,3 +1,28 @@
 <div class="footer">
-
+  <div class="footer-parts">
+      <p class="footer-parts-logo">
+        <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "100px"), root_url %>
+      </p>
+      <ul>
+      <li><a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a></li>
+      <li><%= link_to "このアプリについて", "#" %></li>
+      <li><%= link_to "利用規約", "#" %></li>
+    </ul>
+  </div>
+  <div class="footer-parts">
+    <ul>
+      <li class="footer-parts-title"><%= link_to "TOY APPについて", root_url %></li>
+      <li><%= link_to "お知らせ", "#" %></li>
+      <li><%= link_to "お問合せ", "#" %></li>
+      <li><%= link_to "TOY APP ガイド", "#" %></li>
+    </ul>
+  </div>
+  <div class="footer-parts">
+    <ul>
+      <li class="footer-parts-title">TOY APP リンク</li>
+      <li><%= link_to "Facebook", "#" %></li>
+      <li><%= link_to "Twitter", "#" %></li>
+      <li><%= link_to "Google", "#" %></li>
+    </ul>
+  </div>
 </div>

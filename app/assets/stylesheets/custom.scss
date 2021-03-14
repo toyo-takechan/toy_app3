@@ -6,7 +6,7 @@ body{
   .header{
     width:  100%;
     height: 100px;
-    background-color: yellowgreen;
+    // background-color: yellowgreen;
     display: flex;
     &-left{
       width: 300px;
@@ -67,7 +67,8 @@ body{
         &-title{
           font-size: 24px;
           font-weight: bold;
-          border: solid 5px;
+          // border: solid 5px;
+          // width: 200px;
           height: 40px;
           padding-top: 10px;
         }
@@ -85,11 +86,28 @@ body{
     }
   }
   .footer{
+    display: flex;
     width: 100%;
-    height: 50px;
-    background-color: lawngreen;
+    height: 150px;
+    // background-color: #202020;
     // position: fixed;
     bottom: 0;
+    &-parts{
+      width: calc(100% / 3);
+      font-size: 14px;
+      color:lightcyan;
+      margin-left: 100px;
+      &-title{
+      font-size: 18px;
+      font-weight: bold;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      }
+    }
+    &-parts a{
+      color:lightcyan;
+      text-decoration: none;
+    }
   }
   
   .form{
