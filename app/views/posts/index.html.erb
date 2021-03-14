@@ -3,12 +3,12 @@
 </div>
 <div class="main">
   <h1 class="main-name"><%=link_to "TOY  APPへようこそ", "#" %></h1>
-  <h1 class="main-name"><%= link_to "ユーザーネーム", "#" %></h1>
+  <h1 class="main-name"><%= link_to "投稿タイトル一覧", "#" %></h1>
   <div class="main-post">
       <% @posts.each do |post| %>
-      <p class="main-post-title"><%= post.title  %></p>
-      <p class="main-post-content"><%= post.content %></p>
-      <p class="main-post-image">投稿写真<%  %></p>
+      <p class="main-post-title"><%=post.title %></p>
+      <%# <p class="main-post-content"><%= post.content %>
+      <%# <p class="main-post-image"><%= image_tag post.image if post.image.attached? %>
       <% end %>
   </div>
 </div>

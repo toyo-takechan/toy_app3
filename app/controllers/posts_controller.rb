@@ -9,16 +9,18 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.image.attach(params[:post][:image])
       if @post.save
         flash[:info] ="投稿に成功しました。" 
-        redirect_to root_url     
+        # redirect_to root_url     
+        redirect_to @post    
       else
        render 'new'
       end
   end
 
   def show
-    @post = Post.find_by()
+    @post = Post.find(params[:id])
   end
 
   def edit
@@ -29,6 +31,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :content )
+    params.require(:post).permit(:title, :content, :image )
   end
 end

@@ -1,2 +1,12 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div class="aside">
+  
+</div>
+<div class="main">
+  <h1 class="main-name"><%= link_to "投稿ページ", "#" %></h1>
+  <div class="main-post">
+    <p class="main-post-title"><%= @post.title  %></p>
+    <p class="main-post-content"><%= @post.content %></p>
+    <p class="main-post-image"><%= image_tag @post.image if @post.image.attached? %></p>
+  </div>
+</div>
+
