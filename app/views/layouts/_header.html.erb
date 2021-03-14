@@ -1,0 +1,18 @@
+<header class="header">
+  <div class="header-left">
+    <%= link_to image_tag('robot1.png', alt:"logo",width:"70px"), root_url, class:"header-left-robot" %>
+    <%= link_to image_tag('robot2.png', alt:"logo",width:"90px"), root_url, class:"header-left-robot" %>
+    <%= link_to image_tag('robot6.webp', alt:"logo",width:"80px"), root_url, class:"header-left-robot" %>
+    <%= link_to image_tag('robot5.webp', alt:"logo",width:"70px"), root_url, class:"header-left-robot" %>
+  </div>
+  <div class="header-middle">
+    <h1 ><%= link_to "TOY APP", root_url, class:"header-middle-title" %></h1>
+  </div>
+  <div class="header-rigtht">
+    <%= link_to "ホームへ",root_url, class:"header-rigtht-link" %> 
+    <%= link_to "新規投稿",new_post_path, class:"header-rigtht-link" %>
+    <%= link_to "サインアップ", "#", class:"header-rigtht-link" %>
+    <%= link_to "ログイン", "#", class:"header-rigtht-link" %>
+
+  </div>
+</header>

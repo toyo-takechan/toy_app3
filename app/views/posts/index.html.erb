@@ -2,8 +2,8 @@
   
 </div>
 <div class="main">
-  <h1 class="main-name"><%=link_to "TOY  APPへようこそ", "#" %></h1>
-  <h1 class="main-name"><%= link_to "投稿タイトル一覧", "#" %></h1>
+  <h1 class="main-name"><%=link_to "ようこそ", root_url %></h1>
+  <h1 class="main-name"><%= link_to "投稿タイトル一覧", root_url %></h1>
   <div class="main-post">
       <% @posts.each do |post| %>
       <p class="main-post-title"><%=post.title %></p>
