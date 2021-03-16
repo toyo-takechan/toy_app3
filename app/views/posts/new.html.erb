@@ -1,6 +1,4 @@
-<div class="aside">
-  
-</div>
+<%= render 'layouts/aside' %>
 <div class="form">
   <h1 class="form_h1"><%=link_to "TOY  APPへようこそ", new_post_path %></h1>
   <%= form_with(model: @post, local: true) do |f|%>
