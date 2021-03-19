@@ -114,6 +114,19 @@ body{
     #btn:hover {
       opacity: 0.9;
     }
+    #robot-right-box{
+      width: 600px;
+      height: 600px;
+      background: rgb(25, 75, 182);
+      margin-top: 200px; 
+      margin-left: 200px;
+      text-align: center;
+      line-height: 600px;
+      cursor: pointer;
+    }
+    #robot-right-box:hover{
+      opacity: 0.5;
+    }
   }
   .footer{
     display: flex;
