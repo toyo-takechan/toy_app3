@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  belongs_to :user
   has_one_attached :image
   validates :content, presence: true, length: { maximum: 140 }
   # validates :image,   content_type: { in: %w[image/jpeg image/gif image/png],
