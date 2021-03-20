@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   
-  root to: 'posts#index'
-  # root to: 'home#index'
+  # root to: 'users#index'
+  # root to: 'posts#index'
+  root to: 'home#index'
   resources :posts
   resources :users
   get 'robots/robot1'
