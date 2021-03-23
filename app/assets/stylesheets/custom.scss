@@ -225,4 +225,14 @@ body{
       margin-top: 20px;
     }
   } 
+  
+  // ここからエラーメッセージ
+  .alert{
+    &-warning{
+      color: red;
+    }
+    &-warning ul{
+      color: red;
+    }
+  } 
 }

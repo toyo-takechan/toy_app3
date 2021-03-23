@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:notice] = "登録が成功しました。"
-      redirect_to root_url
+      redirect_to @user
     else
       render 'new'
     end
@@ -30,7 +30,8 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:name, :email)
+    params.require(:user).permit(:name, :email, :password,
+                     :password_confirmation)
   end
 
 
