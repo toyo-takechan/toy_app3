@@ -7,5 +7,12 @@
       <%  @user.email %>
   </h1>
   <%# <h1><%= @user.posts.contnt %>
-  <p>Find me in app/views/users/show.html.erb</p>
+  <div class="main-content">
+    <% if @user.posts.any? %>
+      <h3>投稿数(<%= @user.posts.count %>)</h3>
+      <ol class="#">
+        <%= render @posts %>
+      <ol>
+    <% end %>
+  </div>
 </div>

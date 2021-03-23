@@ -13,7 +13,8 @@ class PostsController < ApplicationController
       if @post.save
         flash[:info] ="投稿に成功しました。" 
         # redirect_to root_url     
-        redirect_to @post    
+        redirect_to @user    
+        # redirect_to @post    
       else
        render 'new'
       end
