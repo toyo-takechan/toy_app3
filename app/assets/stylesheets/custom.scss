@@ -28,12 +28,21 @@ body{
       width:600px;
       padding-right: 10px;
       line-height: 100px;
-      &-link{
-        font-size: 24px;
-        text-decoration: none;
-        margin:0 auto;
-        padding: 0 15px;
+      &-ul{
+        display: flex;
+        list-style: none;
+        font-size: 32px;
+        &_li{
+          margin:0 auto;
+          padding: 0 10px;
+        }
+        &_li a{
+          text-decoration: none;
+        }
       }
+      // &-ul a{
+      //   text-decoration: none;
+      // } 
     }
   }
   .container{
