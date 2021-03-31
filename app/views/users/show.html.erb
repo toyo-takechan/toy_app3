@@ -6,7 +6,7 @@
       <%= @user.name %>
       <%  @user.email %>
   </h1>
-  <h1><%= @user.posts.content %></h1>
+  <%# <h1><%= @user.posts.content %>
   <div class="main-content" >
     <% if @user.posts.any? %>
       <h3>投稿数(<%= @user.posts.count %>)</h3>

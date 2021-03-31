@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      log_in @user
       flash[:notice] = "登録できました。"
       redirect_to @user
     else
@@ -19,7 +20,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @posts = @user.posts(params[:id])
+    # @posts = @user.posts(params[:id])
   end
 
   def edit

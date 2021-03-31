@@ -9,10 +9,10 @@
     <h1 ><%= link_to "TOY APP", root_url, class:"header-middle-title" %></h1>
   </div>
   <div class="header-rigtht">
-    <%= link_to "ホームへ",root_url, class:"header-rigtht-link" %> 
-    <%= link_to "新規投稿",new_post_path, class:"header-rigtht-link" %>
+    <%= link_to "ホームへ", root_url, class:"header-rigtht-link" %> 
+    <%= link_to "新規投稿", new_post_path, class:"header-rigtht-link" %>
     <%= link_to "サインアップ", new_user_path, class:"header-rigtht-link" %>
-    <%= link_to "ログイン",login_path , class:"header-rigtht-link" %>
-
+    <%= link_to "ログイン", login_path, class:"header-rigtht-link" %>
+    <%= link_to "ログアウト", logout_path, method: :delete %>
   </div>
 </header>
