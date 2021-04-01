@@ -12,6 +12,7 @@
     <ul class= "header-rigtht-ul">
       <% if logged_in? %>
         <li class= "header-rigtht-ul_li"><%= link_to "ログアウト", logout_path, method: :delete %></li>
+        <li class= "header-rigtht-ul_li"><%= link_to "ユーザ更新", edit_user_path(current_user) %></li>
         <li class= "header-rigtht-ul_li"><%= link_to "新規投稿", new_post_path %></li>
       <% else %>
         <li class= "header-rigtht-ul_li"><%= link_to "ホームへ", root_url %></li> 
