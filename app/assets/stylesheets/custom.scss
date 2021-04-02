@@ -126,6 +126,11 @@ body{
       }
       &-user-name{
         font-size: 45px;
+        margin: 0;
+      }
+      &-user-name a{
+        list-style: none;
+        text-decoration: none;
       }
     }
     // 
