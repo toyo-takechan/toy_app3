@@ -3,12 +3,7 @@
   <h1 class="main-link"><%= link_to "ユーザー一覧ページ", users_path %></h1>
 
 <ul class="main-user-name">
-  <%  @users.each do |user| %>
-  <li>
-    <%= gravatar_for user, size: 50 %>
-    <%= link_to user.name, user %>
-  </li>
-  <% end %>
+  <%= render @users %>
 </ul>
 
 <%= paginate @users %>
