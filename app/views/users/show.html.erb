@@ -10,9 +10,15 @@
   <div class="main-content" >
     <% if @user.posts.any? %>
       <h3>投稿数(<%= @user.posts.count %>)</h3>
-      <ol class="#">
-        <%= render @posts %>
+      <ol class="main-post">
+        <%# <%= render @posts %> 
+        <% @posts.each do |post|%>
+          <li class="main-post-title"><%= post.title  %></li>
+          <li class="main-post-content"><%= post.content %></li>
+          <li class="main-post-image"><%= image_tag post.image if post.image.attached? %></li>
+        <% end %>
       <ol>
+      <%= paginate @posts %>
     <% end %>
   </div>
 </div>
