@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
   resources :posts
   resources :users
+  resources :account_activations, only: :edit
   get 'robots/robot1'
   get 'robots/robot2'
   get 'robots/robot3'
