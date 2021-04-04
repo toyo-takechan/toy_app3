@@ -16,7 +16,7 @@ class PostsController < ApplicationController
     @post.image.attach(params[:post][:image])
       if @post.save
         flash[:info] ="投稿に成功しました。" 
-        redirect_to users_path     
+        redirect_to user_path(current_user)     
         # redirect_to @user      
       else
        render 'new'
