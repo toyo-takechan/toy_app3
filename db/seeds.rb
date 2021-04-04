@@ -1,6 +1,6 @@
 # メインのサンプルユーザーを1人作成する
-User.create!(name:  "TYOHOHAEU TAKENAKA",
-             email: "toyo-takechan@mtf.biglobe.ne.jp",
+User.create!(name:  "Example User",
+             email: "example@railstutorial.org",
              password:              "foobar",
              password_confirmation: "foobar",
              admin: true,
