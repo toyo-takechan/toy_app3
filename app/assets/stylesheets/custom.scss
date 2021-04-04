@@ -99,6 +99,7 @@ body{
         text-align: center; 
         margin: auto;
         padding-top: 10px;
+        list-style: none;
         &-title{
           font-size: 24px;
           font-weight: bold;
@@ -110,13 +111,14 @@ body{
         &-content{
           border: solid 1px ;
           background-color: honeydew;
-          height:250px;
+          min-height:50px;
           padding-top: 10px;
+          text-align: left;
         }
         &-image{
           border: solid 1px ;
           background-color: honeydew;
-          height:400px;
+          min-height:400px;
           padding-top: 10px;
         }
       }

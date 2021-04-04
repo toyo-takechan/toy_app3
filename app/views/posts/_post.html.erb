@@ -1,0 +1,25 @@
+<div class="main">
+  <h1>
+      <%= gravatar_for @user %>
+      <%= @user.name %>
+      <%  @user.email %>
+  </h1>
+  <div class="main-content" >
+    <% if @user.posts.any? %>
+      <h3>投稿数(<%= @user.posts.count %>)</h3>
+      <ol class="main-post">
+        <% @posts.each do |post|%>
+          <li class="main-post-title"><%= post.title  %></li>
+          <span>
+            <% if current_user?(post.user) %>
+              <%= link_to "delete", post, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+            <% end %>
+          </span>
+          <li class="main-post-content"><%= post.content %></li>
+          <li class="main-post-image"><%= image_tag post.image if post.image.attached? %></li>
+        <% end %>
+      <ol>
+      <%= paginate @posts %>
+    <% end %>
+  </div>

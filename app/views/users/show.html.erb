@@ -1,24 +1,4 @@
 <%= render 'layouts/aside' %>
-<div class="main">
-  <h1>
-      <%= gravatar_for @user %>
-      <%# <%= @user.posts.title %> 
-      <%= @user.name %>
-      <%  @user.email %>
-  </h1>
-  <%# <h1><%= @user.posts.content %>
-  <div class="main-content" >
-    <% if @user.posts.any? %>
-      <h3>投稿数(<%= @user.posts.count %>)</h3>
-      <ol class="main-post">
-        <%# <%= render @posts %> 
-        <% @posts.each do |post|%>
-          <li class="main-post-title"><%= post.title  %></li>
-          <li class="main-post-content"><%= post.content %></li>
-          <li class="main-post-image"><%= image_tag post.image if post.image.attached? %></li>
-        <% end %>
-      <ol>
-      <%= paginate @posts %>
-    <% end %>
-  </div>
+
+<%= render 'posts/post'%>
 </div>

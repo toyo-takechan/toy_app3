@@ -1,10 +1,4 @@
 <%= render 'layouts/aside' %>
-<div class="main">
-  <h1 class="main-name"><%= link_to "投稿ページ", "#" %></h1>
-  <div class="main-post">
-    <p class="main-post-title"><%= @post.title  %></p>
-    <p class="main-post-content"><%= @post.content %></p>
-    <p class="main-post-image"><%= image_tag @post.image if @post.image.attached? %></p>
-  </div>
-</div>
+<%= render 'posts/post' %>
+
 

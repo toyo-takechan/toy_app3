@@ -1,7 +1,11 @@
 <%= render 'layouts/aside' %>
 <div class="main">
  <h1>TOY  APPへ　ようこそ</h1>
- <%# <h1 class="main-link"><%= link_to "あなたのページ", user_path %>
  <h1 class="main-link"><%= link_to "ユーザー一覧ページ", users_path %></h1>
  <h1 class="main-link"><%= link_to "投稿一覧ページ", posts_path %></h1>
+  <% if logged_in? %>
+    <h1 class="main-link"><%= link_to "あなたのページ", user_path(current_user) %></h1>
+  <% else %>
+    <h1 class="main-link"><% link_to "あなたのページ", "#" %></h1>
+  <% end %>
 </div>
