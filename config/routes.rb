@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'password_resets/new'
+  get 'password_resets/edit'
   # root to: 'users#index'
   # root to: 'posts#index'
   root to: 'home#index'
@@ -9,6 +11,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :users
   resources :account_activations, only: :edit
+  resources :password_resets, only: [:new, :create, :edit, :update]
   get 'robots/robot1'
   get 'robots/robot2'
   get 'robots/robot3'
