@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   
-  get 'password_resets/new'
-  get 'password_resets/edit'
   # root to: 'users#index'
   # root to: 'posts#index'
   root to: 'home#index'
