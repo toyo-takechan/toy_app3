@@ -146,11 +146,20 @@ body{
       // background-color: olive; 
       display: flex;
       &-left{
-
+        &-p{
+          font-size: 28px;
+          color: green;
+          display: none;
+        }
       }
       &-right{
 
       }
+    }
+    #robot1{
+      font-size: 48px;
+      color:greenyellow;
+      display: none;
     }
     #btn{
       width: 600px;
