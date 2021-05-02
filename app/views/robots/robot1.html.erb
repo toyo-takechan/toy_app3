@@ -1,11 +1,12 @@
 <%= render 'layouts/aside' %>
 <div class="robot">
   <div class="robot-left">
-  <h1 id="robot1">Robot　１号のページへようこそ</h1>
+  <h1 class="robot1">Robot　１号のページへようこそ</h1>
   <p class="robot-left-p">僕のページで　遊んでいってね！ 僕は何に似てるかな？　</p>
-  <%= image_tag('robot1.png', alt:"logo", width: "600px")%>
+  <%= link_to image_tag('robot1.png', alt:"logo", width: "600px")%>
   </div>
   <div class="robot-right">
     <div id ="btn">?</div>
   </div>
 </div>
+

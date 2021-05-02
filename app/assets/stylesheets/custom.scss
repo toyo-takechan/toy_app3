@@ -12,9 +12,17 @@ body{
       width: 300px;
       padding-top: 8px;
       display: flex;
+      &-comment{
+        color:wheat;
+        font-size: 12px;
+        display: none;
+      }
       &-robot{
 
       }
+    }
+    &-left:hover{
+      cursor: pointer;
     }
     &-middle{
       text-align: center;
@@ -153,10 +161,17 @@ body{
         }
       }
       &-right{
-
+        &-btn{
+          background-color: transparent;
+          border: 2px solid transparent;
+        }
+        &-btn:hover{
+          cursor: pointer;
+          background-color:rgba(0,255,255,0.5);
+        }
       }
     }
-    #robot1{
+    .robot1{
       font-size: 48px;
       color:greenyellow;
       display: none;
@@ -265,4 +280,10 @@ body{
       color: red;
     }
   } 
+}
+
+// ここからfontawesome
+.flog{
+  margin-top: 30px;
+  color:rgb(51, 182, 51);
 }
