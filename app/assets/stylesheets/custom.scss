@@ -206,6 +206,33 @@ body{
     #robot-right-box:hover{
       opacity: 0.5;
     }
+    #robot4 {
+      display: none;
+    }
+    #robot6{
+      display: none;
+    }
+    #robot5 {
+      cursor: pointer;
+    }
+    #robot4up{
+      margin-top: 20px;
+    }
+
+    // ここからボタン
+    .btn{
+      font-size: 24px;
+      border: 1px solid #bbb;
+      background-color: #5dca88;
+      padding: 8px 24px;
+      display: inline-block;
+      opacity: 0.8;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn:hover{
+      opacity: 1;
+    }
   }
   .footer{
     display: flex;
@@ -280,10 +307,9 @@ body{
       color: red;
     }
   } 
-}
-
-// ここからfontawesome
-.flog{
-  margin-top: 30px;
-  color:rgb(51, 182, 51);
+  // ここからfontawesome
+  .flog{
+    margin-top: 30px;
+    color:rgb(51, 182, 51);
+  }
 }

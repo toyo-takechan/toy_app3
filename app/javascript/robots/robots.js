@@ -4,16 +4,16 @@ $(function() {
   $(".robot1").fadeIn(3000);
 });
 
-'use strict';
+// 'use strict';
 
-{
-  const btn = document.getElementById('btn');
+// {
+//   const btn = document.getElementById('btn');
 
-  btn.addEventListener('click', () => {
-    const results = ['大吉', '中吉', '凶', '末吉'];
+//   btn.addEventListener('click', () => {
+//     const results = ['大吉', '中吉', '凶', '末吉'];
     // const n = Math.floor(Math.random() * results.length);
     // btn.textContent = results[n];
-    btn.textContent = results[Math.floor(Math.random() * results.length)];
+    // btn.textContent = results[Math.floor(Math.random() * results.length)];
 
     // switch (n) {
     //   case 0:
@@ -26,5 +26,23 @@ $(function() {
     //     btn.textContent = '凶';
     //     break;
     // }
+//   });
+// }
+
+// ここからロボット４
+$(function(){
+  $('#robot5').hover(
+    function(){
+      $('#robot4').fadeIn();
+    },
+    function(){
+      $('#robot4').fadeOut();
+    }
+  );
+});
+
+$(function(){
+  $('#robot4up').click(function(){
+    $('#robot6').css('dislpay','block');
   });
-}
+});
