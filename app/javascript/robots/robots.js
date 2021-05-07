@@ -43,6 +43,6 @@ $(function(){
 
 $(function(){
   $('#robot4up').click(function(){
-    $('#robot6').css('dislpay','block');
+    $('#robot6').fadeIn();
   });
 });
