@@ -147,7 +147,7 @@ body{
         text-decoration: none;
       }
     }
-    // 
+    // ここからロボット
     .robot{
       width: calc(100% - 300px);
       height: 100vh;
@@ -171,6 +171,7 @@ body{
         }
       }
     }
+    // ロボット１
     .robot1{
       font-size: 48px;
       color:greenyellow;
@@ -206,6 +207,27 @@ body{
     #robot-right-box:hover{
       opacity: 0.5;
     }
+// 　　ロボット２
+    #robot-frog1{
+      margin-top: 200px;
+      border-radius: 10px;
+      display: none;
+    }
+    #robot-frog1:hover {
+      opacity: 0.8;
+    }
+    #robot-frog2{
+      float: left;
+      position: fixed;
+      width: 1500px;
+      margin-top: 40px;
+      border-radius: 100px;
+      display: none;
+    }
+    #robot-frog2:hover {
+      opacity: 0.5;
+    }
+
     #robot4 {
       display: none;
     }
@@ -221,7 +243,30 @@ body{
     #robot7 {
       float: left;
       position: fixed;
-      top: 20px;
+      width: 1500px;
+      margin-top: 40px;
+      border-radius: 100px;
+      display: none;
+    }
+    #robot7:hover{
+      opacity: 0.5;
+    }
+    #robot-train{
+      float: left;
+      position: absolute;
+      margin-top: 20px; 
+      margin-left: 20px;
+      display: none;
+    }
+    #robot-train:hover{
+      opacity: 0.5;
+    }
+    #watermark{
+      float: left;
+      position: absolute;
+      margin-top: 20px; 
+      margin-left: 20px;
+      border-radius: 200px;
       display: none;
     }
 
@@ -314,7 +359,7 @@ body{
     }
   } 
   // ここからfontawesome
-  .flog{
+  .frog{
     margin-top: 30px;
     color:rgb(51, 182, 51);
   }

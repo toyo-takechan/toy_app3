@@ -46,3 +46,22 @@ $(function(){
     $('#robot6').fadeIn();
   });
 });
+
+$(function(){
+  $('#frog-button').click(function(){
+    $('#robot-frog1').fadeIn(1500);
+  });
+});
+
+$(function () {
+  $('#frog-button2').click(function () {
+    $('#robot-frog2').fadeIn(3000);
+  });
+});
+
+
+$(function(){
+  $('#robotup').click(function(){
+    $('#robot7').fadeIn(5000);
+  });
+});
