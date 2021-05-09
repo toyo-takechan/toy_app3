@@ -177,7 +177,7 @@ body{
       color:greenyellow;
       display: none;
     }
-    #btn{
+    #omi-btn{
       width: 600px;
       height: 600px;
       background: rgb(25, 182, 25);
@@ -190,6 +190,7 @@ body{
       color: #fff;
       line-height: 600px; 
       cursor: pointer;
+      // display: none;
     }
     #btn:hover {
       opacity: 0.9;
@@ -206,6 +207,12 @@ body{
     }
     #robot-right-box:hover{
       opacity: 0.5;
+    }
+    #omiup{
+      cursor: pointer;
+    }
+    #omiup:hover {
+      opacity: 0.7;
     }
 // 　　ロボット２
     #robot-frog1{

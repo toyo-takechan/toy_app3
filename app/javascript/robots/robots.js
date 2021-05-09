@@ -4,7 +4,11 @@ $(function() {
   $(".robot1").fadeIn(3000);
 });
 
-// 'use strict';
+$(function(){
+  $('#omiup').click(function(){
+    $('#omi-btn').fadeIn();
+  });
+});
 
 // {
 //   const btn = document.getElementById('btn');
@@ -56,6 +60,7 @@ $(function(){
 $(function () {
   $('#frog-button2').click(function () {
     $('#robot-frog2').fadeIn(3000);
+    $('#robot-frog2').fadeOut(12000);
   });
 });
 
@@ -63,5 +68,22 @@ $(function () {
 $(function(){
   $('#robotup').click(function(){
     $('#robot7').fadeIn(5000);
+    $('#robot7').fadeOut(10000);
+  });
+});
+
+$(function(){
+  $('#train-up').click(function(){
+    $('#robot-right-box').fadeOut(1500);
+    $('#robot-train').fadeIn(3000);
+    $('#robot-train').fadeOut(6000);
+    $('#robot-right-box').fadeIn(9000);
+  });
+});
+
+$(function(){
+  $('#watermark-up').click(function(){
+    $('#watermark').fadeIn(3000);
+    $('#watermark').fadeOut(12000);
   });
 });
