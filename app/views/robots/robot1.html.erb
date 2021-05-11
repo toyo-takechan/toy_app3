@@ -1,11 +1,15 @@
 <%= render 'layouts/aside' %>
 <div class="robot">
+  <div class="modal" id="ruby-modal">
+    <%= image_tag("ruby1.png", alt:"logo", width:"100%", class:"ruby1")%>
+  </div>
   <div class="robot-left">
   <h1 class="robot1">Robot　１号のページへようこそ</h1>
   <p class="robot-left-p">僕のページで　遊んでいってね！ 僕は何に似てるかな？　</p>
   <%= link_to image_tag('robot1.png', alt:"logo", width: "600px", id:"omiup")%>
   </div>
   <div class="robot-right">
+    <button class="robot-right-btn" id="modal-robot1"><i class="fas fa-tv fa-4x"></i></button>
     <div id ="omi-btn">?</div>
   </div>
 </div>

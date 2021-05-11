@@ -5,6 +5,13 @@ $(function() {
 });
 
 $(function(){
+  $('#modal-robot1').click(function(){
+    $('#ruby-modal').fadeIn(3000);
+    $('#ruby-modal').fadeOut(8000);
+  });
+});
+
+$(function(){
   $('#omiup').click(function(){
     $('#omi-btn').fadeIn();
   });

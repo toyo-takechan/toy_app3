@@ -214,6 +214,13 @@ body{
     #omiup:hover {
       opacity: 0.7;
     }
+    #modal-robot1{
+     
+    }
+    #ruby-modal{
+      display: none;
+    }
+
 // 　　ロボット２
     #robot-frog1{
       margin-top: 200px;
@@ -276,6 +283,23 @@ body{
       border-radius: 200px;
       display: none;
     }
+    .modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 0;
+    border-radius: 10px;
+    width: 700px;
+    height: auto;
+    text-align: center;
+   } 
+   .ruby1{
+     border-radius: 10px;
+   }
+   .ruby1:hover{
+     opacity: 0.8;
+   }
 
     // ここからボタン
     .btn{
