@@ -1,3 +1,10 @@
+// ここからhome
+$(function(){
+  $('#toy-551').fadeIn(3000);
+  $('#toy-551').fadeOut(6000);
+});
+
+
 // ここからロボット１
 $(function() {
   $(".robot-left-p").fadeIn(1500);
