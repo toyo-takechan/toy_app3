@@ -3,14 +3,14 @@
       <p class="footer-parts-logo">
         <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "100px"), root_url %>
       </p>
-      <ul>
+      <ul class="footer-ul">
       <li><a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a></li>
       <li><%= link_to "このアプリについて", "#" %></li>
       <li><%= link_to "利用規約", "#" %></li>
     </ul>
   </div>
   <div class="footer-parts">
-    <ul>
+    <ul  class="footer-ul">
       <li class="footer-parts-title"><%= link_to "TOY APPについて", root_url %></li>
       <li><%= link_to "お知らせ", "#" %></li>
       <li><%= link_to "お問合せ", "#" %></li>
@@ -18,11 +18,20 @@
     </ul>
   </div>
   <div class="footer-parts">
-    <ul>
+    <ul  class="footer-ul">
       <li class="footer-parts-title">TOY APP リンク</li>
-      <li><%= link_to "Facebook", "#" %></li>
-      <li><%= link_to "Twitter", "#" %></li>
-      <li><%= link_to "Google", "#" %></li>
+      <li><%= link_to "https://ja-jp.facebook.com" do %>
+          <i class="fab fa-facebook "></i>
+          <span class="https://ja-jp.facebook.com">Facebookへ</span>
+          <% end %></li>
+      <li><%= link_to "https://twitter.com/notifications" do %>
+          <i class="fab fa-twitter "></i>
+          <span class="https://twitter.com/notifications" >Twitterへ</span>
+          <% end %></li>
+      <li><%= link_to 'http://www.google.co.jp'  do %>
+          <i class="fab fa-google "></i>
+          <span class='http://www.google.co.jp'  >Googleへ</span>
+          <% end %></li>
     </ul>
   </div>
 </div>

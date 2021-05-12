@@ -32,25 +32,34 @@ body{
         font-size: 45px;
       }
     }
-    &-rigtht{
+    &-right{
       width:600px;
       padding-right: 10px;
       line-height: 100px;
       &-ul{
         display: flex;
         list-style: none;
-        font-size: 24px;
+        font-size: 20px;
         &_li{
           margin:0 auto;
           padding: 0 10px;
         }
         &_li a{
           text-decoration: none;
+          cursor: pointer;
         }
       }
-      // &-ul a{
-      //   text-decoration: none;
-      // } 
+      &-btn {
+      background-color: #5dca88;
+      border-radius: 3px;
+      box-shadow: 0px 5px #279C56;
+      min-width: 80px;
+      text-align: center;
+      }
+      &-btn a {
+        display: block;
+        text-decoration: none;
+      }
     }
   }
   .container{
@@ -129,6 +138,9 @@ body{
           min-height:400px;
           padding-top: 10px;
         }
+        #main-post-imagesize{
+         
+        }
       }
       &-link{
         
@@ -137,6 +149,7 @@ body{
         text-decoration: none;
       }
       &-user-name{
+        text-align: left;
         font-size: 45px;
         margin: 0;
         text-decoration: none;
@@ -339,6 +352,16 @@ body{
       color:lightcyan;
       text-decoration: none;
     }
+    &-ul{
+      list-style: none;
+    }
+    /*Twitter*/
+    .fa-twitter{color:#1da1f2;}
+    /*Facebook*/
+    .fa-facebook{color:#3b5998;}
+    /*instagram*/
+    .fa-instagram-square{color:#e1306c;}
+    .fa-google{ color: plum}
   }
   
   .form{

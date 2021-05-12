@@ -1,12 +1,14 @@
 <%= render 'layouts/aside' %>
 <div class="main">
   <h1 class="main-name"><%=link_to "ようこそ", root_url %></h1>
-  <h1 class="main-name"><%= link_to "投稿タイトル一覧", root_url %></h1>
+  <h1 class="main-name"><%= link_to "投稿一覧", root_url %></h1>
   <div class="main-post">
       <% @posts.each do |post| %>
       <p class="main-post-title"><%=post.title %></p>
-      <%# <p class="main-post-content"><%= post.content %>
-      <%# <p class="main-post-image"><%= image_tag post.image if post.image.attached? %>
+      <p class="main-post-content"><%= post.content %></p>
+      <p class="main-post-image" id="main-post-imagesize"><%= image_tag post.image if post.image.attached? %></p>
       <% end %>
   </div>
+  <%= paginate @posts %>
+
 </div>

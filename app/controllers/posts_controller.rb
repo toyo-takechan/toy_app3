@@ -3,7 +3,9 @@ class PostsController < ApplicationController
   before_action :correct_user, only: :destroy
 
   def index
-    @posts = Post.all
+    # @posts = Post.all
+    # カミナリ実装
+    @posts = Post.all.page(params[:page]).per(2)
   end
 
   def new
