@@ -13,10 +13,21 @@ body{
       padding-top: 8px;
       display: flex;
       &-comment{
-        color:wheat;
-        font-size: 12px;
-        display: none;
+        font-size: 5px;
+        max-width: 70%;
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        background: #f5f5f5;
+        position: relative;
       }
+      &-comment::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        position: absolute;
+}
       &-robot{
 
       }

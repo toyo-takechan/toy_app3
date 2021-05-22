@@ -6,7 +6,10 @@
  <h1 class="main-link"><%= link_to "投稿一覧ページ", posts_path %></h1>
   <% if logged_in? %>
     <h1 class="main-link"><%= link_to "あなたのページ", user_path(current_user) %></h1>
+    <section class="stats">
+        <%= render 'shared/stats' %>
+      </section>
   <% else %>
-    <h1 class="main-link"><% link_to "あなたのページ", "#" %></h1>
+    <h1 class="main-link"><% link_to "", "#" %></h1>
   <% end %>
 </div>
