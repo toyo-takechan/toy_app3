@@ -4,6 +4,10 @@
       <%= @user.name %>
       <%  @user.email %>
   </h1>
+    <section class="stats">
+      <%= render 'shared/stats' %>
+      <%= render 'users/follow_form' if logged_in? %>
+    </section>
   <div class="main-content" >
     <% if @user.posts.any? %>
       <h3>投稿数(<%= @user.posts.count %>)</h3>
