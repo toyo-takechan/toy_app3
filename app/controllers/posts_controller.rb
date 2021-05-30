@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    # 
+    
     @post = current_user.posts.build(post_params)
     @post.image.attach(params[:post][:image])
       if @post.save
@@ -21,6 +21,7 @@ class PostsController < ApplicationController
         redirect_to user_path(current_user)     
         # redirect_to @user      
       else
+      @feed_items = current_user.feed.page(params[:page]).per(2)
        render 'new'
       end
   end

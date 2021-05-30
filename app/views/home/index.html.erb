@@ -4,6 +4,8 @@
  <h1><%=link_to "TOY  APPへ　ようこそ", root_url, class:"main-link" %></h1>
  <h1 class="main-link"><%= link_to "ユーザー一覧ページ", users_path %></h1>
  <h1 class="main-link"><%= link_to "投稿一覧ページ", posts_path %></h1>
+ <%# <h3 class="main-link"><%= render 'shared/feed' %>
+  
   <% if logged_in? %>
     <h1 class="main-link"><%= link_to "あなたのページ", user_path(current_user) %></h1>
     <section class="stats">
@@ -12,4 +14,5 @@
   <% else %>
     <h1 class="main-link"><% link_to "", "#" %></h1>
   <% end %>
+  
 </div>
